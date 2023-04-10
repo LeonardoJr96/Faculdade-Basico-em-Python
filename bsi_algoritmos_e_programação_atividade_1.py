@@ -13,6 +13,8 @@ Original file is located at
 *   Aluno: Leonardo de Almeida Junior
 """
 
+
+
 1# Faça um programa que peça dois números inteiros e imprima a soma desses dois números.
 
 num1 = int(input("digite 1 número para soma: "))
@@ -101,3 +103,5 @@ sys.set_int_max_str_digits(0)
 
 
 print(len(str(2 ** 1000000)),"digítos")
+
+print("fim")

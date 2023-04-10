@@ -58,3 +58,6 @@ area = math.pi * (raio ** 2)
 
 print("o perímetro é:", perimetro)
 print("a área é:", area)
+
+
+print("fim")
