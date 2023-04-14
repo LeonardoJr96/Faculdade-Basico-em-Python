@@ -115,7 +115,7 @@ tamanho = float(input("Quantos metros quadrados irá pintar? "))
 
 #simples
 
-parede = float(tamanho / 6)
+parede = (math.ceil(tamanho / 6) * 1.1)
 lata = math.ceil(parede / 18)
 galao = math.ceil(parede / 3.6)
 preco_lata = int(80 * lata)
@@ -123,11 +123,12 @@ preco_galao = int(25 * galao)
 
 #misturado
 
-lao1 = galao 
-lao2 = lata 
-preco_lata1 = int(80 * lao2)
-preco_galao1 = int(25 * lao1)
-preco_total = preco_lata1 + preco_galao1
+lao = math.floor(parede / 18)
+lao1 = parede % 18
+lao2 = math.ceil(lao1/3.6)
+preco_lao = lao * 80
+preco_lao2 = lao2 * 25
+preco_total = preco_lao + preco_lao2
 
 
 #imagem
