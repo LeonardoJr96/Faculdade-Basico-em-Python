@@ -7,16 +7,20 @@ Original file is located at
     https://colab.research.google.com/drive/1yTE3j2jBaxfkzTJfKIInXB1l_oHrfN_2
 """
 
+1#
 print("Alo mundo")
 
+2#
 num = str(input("digite um número: "))
 print("O número informado é", num)
 
+3#
 num1 = float(input("digite 1° número: "))
 num2 = float(input("digite o 2° número: "))
 soma = int(num1 + num2)
 print(soma)
 
+4#
 print("digite as suas notas bimestrais")
 not1 = float(input("nota 1: "))
 not2 = float(input("nota 2: "))
@@ -25,10 +29,12 @@ not4 = float(input("nota 4: "))
 med = (not1 + not2 + not3 + not4)/4
 print("sua média é", med)
 
+5#
 cem = float(input("digite o tamanho em metros para a conversão: "))
 convert = float(cem * 100)
 print("A conversão de", cem, "m para centimetros é", convert, "cm")
 
+6#
 import math
 rai = int(input("digite o número do raio: "))
 A = int(math.pi * (rai ** 2))
@@ -74,3 +80,66 @@ print(C)
 alt = float(input("digite a sua altura: "))
 peso = (72.7 * alt) - 58
 print("seu peso é", peso)
+
+15#
+hora = float(input("Quanto você ganha por hora: "))
+mes = float(input("quantas horas vc trabalha por mês: "))
+
+rend_total = mes * hora
+imposto = rend_total * 0.11
+inss = rend_total * 0.08
+sind = rend_total * 0.05
+rend_liquid = rend_total - (imposto + inss + sind)
+
+print("+ Salário Bruto : R$", rend_total)
+print("- IR (11%) : R$", imposto)
+print("- INSS (8%) : R$", inss)
+print("- Sindicato (5%) : R$", sind)
+print("= Salário liquido : R$", rend_liquid)
+
+16#
+import math
+
+tamanho = float(input("Quantos metros quadrados irá pintar? "))
+
+lata = float(tamanho / 3)
+lata1 = math.ceil(lata / 18) 
+preco = int(lata1 * 80)
+
+print("será necessária", lata1,"latas e custará no total : R$", preco)
+
+17#
+import math
+
+tamanho = float(input("Quantos metros quadrados irá pintar? "))
+
+#simples
+
+parede = float(tamanho / 6)
+lata = math.ceil(parede / 18)
+galao = math.ceil(parede / 3.6)
+preco_lata = int(80 * lata)
+preco_galao = int(25 * galao)
+
+#misturado
+
+lao1 = galao 
+lao2 = lata 
+preco_lata1 = int(80 * lao2)
+preco_galao1 = int(25 * lao1)
+preco_total = preco_lata1 + preco_galao1
+
+
+#imagem
+print("será necessário", lata,"latas de 18 litros por: R$", preco_lata)
+print("Será necessário", galao,"galões de 3,6 litros por: R$", preco_galao)
+print("será necessários",lao1, "galões e", lao2, "latas por: R$", preco_total)
+
+18#
+arquivo = float(input("digite o tamanho de memória, em MB: "))
+velocidade = float(input("digite a velocidade da internet, em Mbps: "))
+
+vel = (velocidade / 8)
+tempo = float((arquivo / vel) / 60)
+
+print("O tempo aproximado:", tempo, "min")
