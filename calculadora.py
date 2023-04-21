@@ -28,3 +28,4 @@ else:
 
 3# resultado
 (print(resultado))
+print('fim')
