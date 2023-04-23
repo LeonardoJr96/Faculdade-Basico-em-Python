@@ -7,6 +7,16 @@ Original file is located at
     https://colab.research.google.com/drive/1KVWb_DYQvj6z2G7iL64cjZEgUw0E2tnH
 """
 
+7#
+fah = float(input("digite os graus fahrenheit: "))
+centígrados = (fah - 32) * 5 / 9
+print(fah, "centígrados")
+
+8#
+chuva = float(input("quantas polegas de chuva cairam hj? "))
+conversão = float(chuva * 25.4)
+print("chuveram", conversão, "milímetros de chuva")
+
 9#
 import math
 
@@ -27,12 +37,23 @@ media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
 print("a média é:", media)
 
 11#
+nota_1 = float(input("digite a primeira nota: "))
+nota_2 = float(input("digite a segunda nota: "))
+nota_3 = float(input("digite a terceira nota: "))
+
+media = ((nota_1 *2) + (nota_2 * 3) + (nota_3 * 5)) / (2 + 3 +5)
+
+print("média do aluno: ", media)
 
 12#
+a = int(input("digite um valor para A: "))
+b = int(input("digite um valor para B: "))
+c = int(input("digite um valor para C: "))
+d = int(input("digite um valor para D: "))
+e = int(input("digite um valor para E: "))
+f = int(input("digite um valor para F: "))
 
+x = (((c * e) - (b * f)) / ((a * e) - (b * d)))
+y = (((a * f) - (c * d)) / ((a * e) - (b * d)))
 
-
-
-
-
-
+print(f'x = {x}, y = {y}')
