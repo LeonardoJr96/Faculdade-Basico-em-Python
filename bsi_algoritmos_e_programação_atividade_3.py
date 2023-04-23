@@ -81,6 +81,38 @@ alt = float(input("digite a sua altura: "))
 peso = (72.7 * alt) - 58
 print("seu peso é", peso)
 
+13#
+sexo = str(input("digite o seu sexo (masculino ou feminino): "))
+altura = float(input("digite a sua altura: "))
+
+if sexo == "masculino":
+    peso_ideal = (72.7 * altura) - 58
+else:
+    peso_ideal = (62.1 * altura) - 44.7
+print(f'seu peso ideal seria {peso_ideal} kg')
+
+peso = float(input("informe seu peso: "))
+
+if peso == peso_ideal:
+    print("seu peso está dentro")
+else:
+    if peso < peso_ideal:
+        print("você está abaixo do peso ideal")
+    else:
+        print("você está acima do peso ideal")
+
+14#
+peso = int(input("informe quantos kg de peixe pesecou: "))
+
+if peso <= 50:
+    excesso = 0
+    multa = excesso * 4
+    print("não há excessos e nem multa")
+else:
+    excesso = peso % 50
+    multa = excesso * 4
+    print(f'o valor a pagar dos {excesso} kg de peixe é de R${multa}')
+
 15#
 hora = float(input("Quanto você ganha por hora: "))
 mes = float(input("quantas horas vc trabalha por mês: "))
