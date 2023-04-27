@@ -166,9 +166,217 @@ else:
         print("Outros")
 
 16#
+produto = float(input("informe o valor do produto: "))
+compras = int(input("quantos produtos comprou"))
 
+valor_real = produto * compras
 
-17#
+if compras == 1 and produto == 20 or 20.0:
+  produto_1 = produto + (produto * 0.45)
+  print(f'o valor do produto é R$ {produto}, o total, Lucro do comerciante de 45%, fica R$ {produto_1}')
+else:
+  if valor_real < 20:
+    imposto = produto * 0.45
+    valor_total = valor_real + imposto
+    print(f'o valor do produto é R$ {produto}, o total, Lucro do comerciante de 45%, fica R$ {valor_total}')
+  if valor_real > 20 or 20.0:
+    imposto = produto * 0.30
+    valor_total = valor_real + imposto
+    print(f'o valor do produto é R$ {produto}, o total, Lucro do comerciante de 45%, fica R$ {valor_total}')
+
+17# calendário mais completo, pois ja tinha feito algo parecido
+dia = int(input('digite o dia que nasceu: '))
+mes = str(input('escreva o mês em que nasceu: '))
+ano = int(input('esreva o ano em que nasceu: '))
+        
+if mes == 'janeiro' or mes == '1' or mes == '01':
+    mes_1 = 1
+    print(f'vc nasceu {dia} de janeiro de {ano}, {dia}/{mes_1}/{ano}')
+else:
+    if mes == 'fevereiro' or mes == '2' or mes == '02':
+        mes_1 = 2
+        print(f'vc nasceu {dia} de fevereiro de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'março' or mes == '3' or mes == '03':
+        mes_1 = 3
+        print(f'vc nasceu {dia} de março de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'abril' or mes == '4' or mes == '04':
+        mes_1 = 4
+        print(f'vc nasceu {dia} de abril de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'maio' or mes == '5' or mes == '05':
+        mes_1 = 5
+        print(f'vc nasceu {dia} de maio de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'junho' or mes == '6' or mes == '06':
+        mes_1 = 6
+        print(f'vc nasceu {dia} de junho de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'julho' or mes == '7' or mes == '07':
+        mes_1 = 7
+        print(f'vc nasceu {dia} de julho de {ano}, {dia}/{mes_1}/{ano}')    
+    if mes == 'agosto' or mes == '8' or mes == '08':
+        mes_1 = 8
+        print(f'vc nasceu {dia} de agosto de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'setembro' or mes == '9' or mes == '09':
+        mes_1 = 9
+        print(f'vc nasceu {dia} de setembro de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'outubro' or mes == '10':
+        mes_1 = 10
+        print(f'vc nasceu {dia} de outubro de {ano}, {dia}/{mes_1}/{ano}')
+    if mes == 'novembro' or mes == '11':
+        mes_1 = 11
+        print(f'vc nasceu {dia} de novembro de {ano}, {dia}/{mes_1}/{ano}')
+    else:
+        mes_1 = 12 
+        print(f'vc nasceu {dia} de dezembro de {ano}, {dia}/{mes_1}/{ano}')
+
+18#
+letra = str(input("digite uma letra: "))
+
+if letra == 'A' or letra == 'a' or letra == 'E' or letra == 'e' or letra == 'I' or letra == 'i' or letra == 'O' or letra == 'o' or letra == 'U' or letra == 'u':
+  print("é uma vogal")
+else:
+  print("é uma consoante")
+
+19#
+numero_1 = int(input("digite um número: "))
+numero_2 = int(input(f'digite outro número diferente de {numero_1}: '))
+
+if numero_2 == numero_1:
+  numero_2 = int(input(f'digite um número diferente de {numero_1}: '))
+  if numero_1 > numero_2:
+    print(f'o número {numero_1} é maior!')
+  else:
+    print(f'o número {numero_2} é maior!')
+else:
+  if numero_1 > numero_2:
+    print(f'o número {numero_1} é maior!')
+  else:
+    print(f'o número {numero_2} é maior!')
+
+20#
+numero_1 = int(input("digite um número: "))
+numero_2 = int(input(f'digite outro número diferente de {numero_1}: '))
+
+if numero_2 == numero_1:
+  numero_2 = int(input(f'digite um número diferente de {numero_1}: '))
+  if numero_1 > numero_2:
+    print(numero_2, numero_1)
+  else:
+    print(numero_1, numero_2)
+else:
+  if numero_1 > numero_2:
+    print(numero_2, numero_1)
+  else:
+    print(numero_1, numero_2)
+
+21#
+numero_1 = int(input("digite um número para A: "))
+numero_2 = int(input(f'digite outro número diferente de {numero_1} para B: '))
+numero_3 = int(input(f'digite outro número diferente de {numero_1} e {numero_2} para C: '))
+
+if numero_2 == numero_1 or numero_2 == numero_3:
+  numero_2 = int(input(f'digite um número diferente de {numero_1} e {numero_3} para B: '))
+if numero_3 == numero_1:
+    numero_3 = int(input(f'digite um número diferente de {numero_1} e {numero_2} para C : '))
+    if numero_1 > numero_2 and numero_1 > numero_3:
+      print(numero_1)
+    if numero_2 > numero_3 and numero_2 > numero_1:
+      print(numero_2)
+    if numero_3 > numero_1 and numero_3 > numero_2:
+      print(numero_3)
+else:
+  if numero_1 > numero_2 and numero_1 > numero_3:
+    print(numero_1)
+  if numero_2 > numero_3 and numero_2 > numero_1:
+    print(numero_2)
+  if numero_3 > numero_1 and numero_3 > numero_2:
+    print(numero_3)
+
+22#
+numero_1 = int(input("digite um número para A: "))
+numero_2 = int(input(f'digite outro número diferente de {numero_1} para B: '))
+numero_3 = int(input(f'digite outro número diferente de {numero_1} e {numero_2} para C: '))
+
+if numero_2 == numero_1 or numero_2 == numero_3:
+  numero_2 = int(input(f'digite um número diferente de {numero_1} e {numero_3} para B: '))
+if numero_3 == numero_1:
+    numero_3 = int(input(f'digite um número diferente de {numero_1} e {numero_2} para C : '))
+    if numero_1 > numero_2 > numero_3:
+      print(numero_1 + numero_2)
+    if numero_1 > numero_3 > numero_2:
+      print(numero_1 + numero_3)
+    if numero_2 > numero_1 > numero_3:
+      print(numero_1 + numero_2)
+    if numero_2 > numero_3 > numero_1:
+      print(numero_3 + numero_2)
+    if numero_3 > numero_1 > numero_2:
+      print(numero_1 + numero_3)
+    if numero_3 > numero_2 > numero_1:
+      print(numero_3 + numero_2)
+else:
+  if numero_1 > numero_2 > numero_3:
+    print(numero_1 + numero_2)
+  if numero_1 > numero_3 > numero_2:
+    print(numero_1 + numero_3)
+  if numero_2 > numero_1 > numero_3:
+    print(numero_1 + numero_2)
+  if numero_2 > numero_3 > numero_1:
+    print(numero_3 + numero_2)
+  if numero_3 > numero_1 > numero_2:
+    print(numero_1 + numero_3)
+  if numero_3 > numero_2 > numero_1:
+    print(numero_3 + numero_2)
+
+23#
+numero_1 = int(input("digite um número para A: "))
+numero_2 = int(input(f'digite outro número diferente de {numero_1} para B: '))
+numero_3 = int(input(f'digite outro número diferente de {numero_1} e {numero_2} para C: '))
+
+if numero_2 == numero_1 or numero_2 == numero_3:
+  numero_2 = int(input(f'digite um número diferente de {numero_1} e {numero_3} para B: '))
+if numero_3 == numero_1:
+    numero_3 = int(input(f'digite um número diferente de {numero_1} e {numero_2} para C : '))
+    if numero_1 > numero_2 > numero_3:
+      print(numero_1, numero_2, numero_3)
+    if numero_1 > numero_3 > numero_2:
+      print(numero_1, numero_3, numero_2)
+    if numero_2 > numero_1 > numero_3:
+      print(numero_2, numero_1, numero_3)
+    if numero_2 > numero_3 > numero_1:
+      print(numero_2, numero_3, numero_1)
+    if numero_3 > numero_1 > numero_2:
+      print(numero_3, numero_1, numero_2)
+    if numero_3 > numero_2 > numero_1:
+      print(numero_3, numero_2, numero_1)
+else:
+  if numero_1 > numero_2 > numero_3:
+    print(numero_1, numero_2, numero_3)
+  if numero_1 > numero_3 > numero_2:
+    print(numero_1, numero_3, numero_2)
+  if numero_2 > numero_1 > numero_3:
+    print(numero_2, numero_1, numero_3)
+  if numero_2 > numero_3 > numero_1:
+    print(numero_2, numero_3, numero_1)
+  if numero_3 > numero_1 > numero_2:
+    print(numero_3, numero_1, numero_2)
+  if numero_3 > numero_2 > numero_1:
+    print(numero_3, numero_2, numero_1)
+
+24#
+nota_1 = float(input("digite a primeira nota: "))
+nota_2 = float(input("digite a segunda nota: "))
+
+media = (nota_1 + nota_2) / 2
+
+if media <= 3.9:
+  print("nota E")
+else:
+  if media >= 4 and media <= 5.9:
+    print("nota D")
+  if media >= 6 and media <= 7.49:
+    print("nota C")
+  if media >= 7.5 and media <= 8.9:
+    print("nota B")
+  if media >=9 and media <= 10:
+    print("nota A")
 
 25#
 # inicial
