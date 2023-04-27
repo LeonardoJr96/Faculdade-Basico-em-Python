@@ -223,6 +223,116 @@ a = int(input("digite um valor para A: "))
 b = int(input("digite um valor para B: "))
 c = int(input("digite um valor para C: "))
 
+triangulo = str(input("é um triangulo? sim ou não: "))
+
+if triangulo == 'sim' or triangulo == 'Sim':
+  if a == b and b == c:
+    print("é um triângulo equilátero")
+  else:
+    if a == b or a == c:
+      print("é isósceles")
+    if b == c:
+      print("é isóceles")
+    else:
+      print("é escaleno")
+else:
+  print("os valores lidos não formam um triângulo")
+
+28#
+a = float(input("digite um número para A: "))
+b = float(input("digite um número para B: "))
+c = float(input("digite um número para C: "))
+opcao = int(input("escolhe uma  número de 1 a 3: "))
+
+if a <= 0 or b <= 0 or c <= 0 or opcao <= 0:
+  print("reinicie o programa!")
+else:
+  if opcao == 2:
+    if a > b > c:
+      print(a, b, c)
+    else:
+      if a > c > b:
+        print(a, c, b)
+      if b > a > c:
+        print(b, a, c)
+      if b > c > a:
+        print(b, c, a)
+      if c > a > b:
+        print(c, a, b)
+      if c > b > a:
+        print(c, b, a)
+  if opcao == 1:
+    if a > b > c:
+      print(c, b, a)
+    else:
+      if a > c > b:
+        print(b, c, a)
+      if b > a > c:
+        print(c, a, b)
+      if b > c > a:
+        print(a, c, b)
+      if c > a > b:
+        print(b, a, c)
+      if c > b > a:
+        print(a, b, c)
+  if opcao == 3:
+    if a > b > c:
+      print(b, a, c)
+    else:
+      if a > c > b:
+        print(c, a, b)
+      if b > a > c:
+        print(a, b, c)
+      if b > c > a:
+        print(c, b, a)
+      if c > a > b:
+        print(a, c, b)
+      if c > b > a:
+        print(a, c, a)
+
+29#
+salario = float(input("digite o seu salário: "))
+
+if salario <= 400.0:
+  aumento = salario * 0.15
+  salario_real = salario + aumento
+else:
+  if salario > 400.0 and salario <= 700.0:
+    aumento = salario * 0.12
+    salario_real = salario + aumento
+  if salario > 700 and salario <= 1000:
+    aumento = salario * 0.10
+    salario_real = salario + aumento
+  if salario > 1000 and salario <= 1500:
+    aumento = salario * 0.07
+    salario_real = salario + aumento
+  if salario > 1500 and salario <= 2000:
+    aumento = salario * 0.04
+    salario_real = salario + aumento
+  if salario > 2000:
+    aumento = salario * 0
+    salario_real = salario + aumento
+print(f'o seu salário é R$ {salario}, o novo salário corrigido é R$ {salario_real}')
+
+30#
+salario = float(input("digite o seu salário: "))
+
+if salario < 10000:
+  aumento = salario * 0.55
+  salario_real = salario + aumento
+else:
+  if salario >= 10000 and salario <= 25000:
+    aumento = salario * 0.20
+    salario_real = salario + aumento
+  if salario > 25000:
+    aumento = salario * 0.20
+    salario_real = salario + aumento
+print(f'o novo salário a receber é R$ {salario_real}')
+
+31#
+
+
+32#
 
 
 33#
