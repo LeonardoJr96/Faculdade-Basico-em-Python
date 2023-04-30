@@ -538,10 +538,43 @@ else:
 print(f'o novo salário a receber é R$ {salario_real}')
 
 31#
+temperatura = int(input("digite quantos graus o forno irá operar: "))
 
+if temperatura <= 500:
+  print("temperatura inválida")
+else:
+  if 500 < temperatura and temperatura < 700:
+    print("aquecimento ligado em 100%")
+  if 700 <= temperatura and temperatura < 735:
+    print("aquecimento ligado em 50%")
+  if 735 <= temperatura and temperatura < 780:
+    print("aquecimento desligado")
+  if 780 <= temperatura and temperatura <= 1000:
+    print("superaquecidos")
 
 32#
+valor = int(input("digite um número de 1 a 4: "))
+numero1 = float(input("digite um número: "))
+numero2 = float(input("digite outro número: "))
 
+if valor == 0:
+  resultado = numero1 + numero2
+  print(resultado)
+else:
+  if valor == 1:
+    resultado = numero1 - numero2
+    print(resultado)
+  if valor == 2:
+    resultado = numero1 * numero2
+    print(resultado)
+  if valor == 3:
+    resultado = numero1 / numero2
+    print(resultado)
+  if valor == 4:
+    resultado = (numero1 + numero2) / 2
+    print(resultado)
+  if valor < 0 and valor >= 5:
+    print('Valor errado. Programa encerrando sem cálculos')
 
 33#
 a = int(input("escreva um número: "))
