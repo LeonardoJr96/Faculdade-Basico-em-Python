@@ -1,31 +1,31 @@
-1# inicial
+resultado = 0
+repetir = 'sim'
 
-numero_1 = float(input("digite um número: "))
-sinal = str(input("digite o sinal: "))
-numero_2 = float(input("digite outro número: "))
+while repetir == 'sim':
 
-2# condições
+    numero_1 = float(input("digite um número: "))
+    sinal = str(input("digite o sinal: "))
+    numero_2 = float(input("digite outro número: "))
 
 #somar
-if sinal == '+':
-    resultado = numero_1 + numero_2
-else:
- 
+    if sinal == '+':
+        resultado = numero_1 + numero_2
+    else:
 #subtrair
-    if sinal == '-':
-        resultado = numero_1 - numero_2
-
+        if sinal == '-':
+            resultado = numero_1 - numero_2
 #multiplicar
-    if sinal == '*' and 'x':
-        resultado = numero_1 * numero_2
-
+        if sinal == '*' or sinal == 'x':
+            resultado = numero_1 * numero_2
 #dividir
-    if sinal == '/':
-        resultado = numero_1 / numero_2
+        if sinal == '/':
+            resultado = numero_1 / numero_2
 #potência
-    if sinal == '**':
-        resultado = numero_1 ** numero_2
+        if sinal == '**':
+            resultado = numero_1 ** numero_2
 
-3# resultado
-(print(resultado))
-print('fim')
+    print(resultado)
+    repetir = str(input('quer fazer um novo calculo? '))
+
+else:
+    print('fim')
